@@ -14,13 +14,13 @@ guess = 0           # 사용자가 추측한 숫자를 저장
 # https://docs.python.org/ko/3/library/functions.html#input
 myName = input('Hello! What is your name: ')    # python3 에서 input()은 문자열을 반환한다.
 
-# https://docs.python.org/3/library/random.html#random.randint
+# https://docs.python.org/ko/3/library/random.html#random.randint
 number = random.randint(1, 20)  # 1 ~ 20 (include 1, 20) 임의의 정수를 가져오는 module 을 활용
 print('Well, ' + myName + ', I am thinking of a number between 1 and 20.')  # 문자열을 연결할 때 '+' 연산자를 활용할 수 있다.
 
 while guessesTaken < 6:
     print('Take a guess.')
-    guess = int(input())  # 문자열을 반환하기 때문에 int() 내장 함수를 이용하여 변환한다.
+    guess = int(input())  # 문자열을 반환하기 때문에 int() 내장 함수를 이용하여 정수로 변환한다.
 
     guessesTaken += 1
 
