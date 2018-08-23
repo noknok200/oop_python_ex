@@ -18,19 +18,20 @@ Style Guide for Python Code
     - 클래스 내의 메소드 정의는 1줄씩 띄어 쓴다.
 """
 
-text_line = 80
-sleep_time = 2
+# Python 에서는 상수 선언이 없다. 다만, 표기를 대문자와 '_' 만을 사용하여 구분함.
+TEXT_LINE = 80
+SLEEP_TIME = 2
 
 
 def display_intro():  # intro 함수 python 에서는 함수를 def 을 이용하여 정의한다. 반환형을 명시하지 않는다.
-    print('=' * text_line)
+    print('=' * TEXT_LINE)
     print("""
     You are in a land full of dragons. 
     In front of you, you see two caves. 
     In one cave, the dragon is friendly and will share his treasure with you. 
     The other dragon is greedy and hungry, and will eat you on sight.
     """)
-    print('=' * text_line)
+    print('=' * TEXT_LINE)
 
 
 def choose_cave():  # 동굴을 선택하는 함수
@@ -47,11 +48,11 @@ def check_cave(chosen_cave):  # 결과를 보여주는 함수
     https://docs.python.org/ko/3/library/time.html#time.sleep
     sleep(seconds) 는 실수를 받아 그 시간만큼 실행을 지연시킨다.
     """
-    time.sleep(sleep_time)
+    time.sleep(SLEEP_TIME)
     print('It is dark and spooky...')
-    time.sleep(sleep_time)
+    time.sleep(SLEEP_TIME)
     print('A large dragon jumps out in front of you! He opens his jaws and...\n')
-    time.sleep(sleep_time)
+    time.sleep(SLEEP_TIME)
 
     friendly_cave = random.randint(1, 2)
 
@@ -69,5 +70,5 @@ while play_again == 'yes' or play_again == 'y':
     cave_number = choose_cave()
 
     check_cave(cave_number)
-    print('\n' + ('=' * text_line))
+    print('\n' + ('=' * TEXT_LINE))
     play_again = input('Do you want to play again? (yes or no): ')
