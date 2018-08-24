@@ -58,3 +58,5 @@ def k_date_print(year, month, day):
 
 k_date_print(2018, 8, 23)                   # 일반적인 인수 전달
 k_date_print(month=8, day=23, year=2018)    # 키워드 인수 전달 방식
+
+

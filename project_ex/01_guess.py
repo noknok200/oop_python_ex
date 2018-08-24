@@ -33,4 +33,4 @@ if guess == number:
     print('Good job, %s! You guessed my number in %d guesses!' % (myName, guessesTaken))
 
 elif guess != number:
-    print('Nope. The number I was thinking of was %d' % guess)
+    print('Nope. The number I was thinking of was %d' % number)
