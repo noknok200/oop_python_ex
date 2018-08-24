@@ -23,8 +23,8 @@ print(a[:1] + 'y' + a[2:])  # 출력: Python
 a = "hobby"
 print(a.count('b'))     # 출력: 2
 
-print(a.find('y'))      # 출력: 0, 찾는 값이 없으면 -1
-print(a.index('y'))     # 출력: 0, find 와 동일하지만, 없으면 exception 에러
+print(a.find('y'))      # 출력: 4, 찾는 값이 없으면 -1
+print(a.index('y'))     # 출력: 4, find 와 동일하지만, 없으면 exception 에러
 
 a = ','
 print(a.join('abcd'))   # 출력: a,b,c,d
